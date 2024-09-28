@@ -3,5 +3,5 @@
 </script>
 
 <main>
-  <h1>OeffiFair</h1>
+  <h1 class="font-bold text-2xl text-yellow-500">OeffiFair</h1>
 </main>
