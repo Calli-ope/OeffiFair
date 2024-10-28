@@ -54,7 +54,7 @@
   </button>
 </main>
 {:else}
-  <div class="min-h-screen bg-white p-6 flex flex-col justify-center items-center" in:fade={{ duration: 300 }}>
+  <div class="min-h-screen bg-neutral-200 p-6 flex flex-col justify-center items-center" in:fade={{ duration: 300 }}>
     <h1 class="text-3xl font-semibold mb-4">ÖffiFair</h1>
     <p class="text-xl text-gray-600">Thank you for your ride!</p>
   </div>
