@@ -1,5 +1,5 @@
 <script>
-  import { MapPin, User, Tag, Euro } from 'lucide-svelte';
+  import { MapPin, TrainFront, TrainTrack, Euro } from 'lucide-svelte';
   import { fade } from 'svelte/transition';
 
   let showEndScreen = false;
@@ -13,37 +13,35 @@
 
 {#if !showEndScreen}
 <main class="flex flex-col justify-center items-center h-screen bg-neutral-200">
-  <div class="space-y-6 pb-20"> <!-- Add padding to avoid overlap with the button -->
-    <div class="text-2xl font-semibold">
+  <div class="space-y-16 pb-20">
+    <div class="text-3xl font-semibold">
       Hallo Max 👋
     </div>
     
-    <div class="space-y-4">
+    <div class="space-y-6">
       <div class="flex items-center space-x-3">
-        <MapPin class="w-5 h-5 text-gray-500" />
-        <span class="font-medium">Frohnau</span>
-      </div>
-      
-      <div class="pl-8 space-y-2">
-        <div class="flex items-center space-x-3">
-          <User class="w-5 h-5 text-gray-500" />
-          <span>12 Haltestellen</span>
-        </div>
-        
-        <div class="flex items-center space-x-3">
-          <Tag class="w-5 h-5 text-gray-500" />
-          <span>16,7 km</span>
-        </div>
-        
-        <div class="flex items-center space-x-3">
-          <MapPin class="w-5 h-5 text-gray-500" />
-          <span class="font-medium">Friedrichstraße</span>
-        </div>
+        <MapPin class="w-7 h-7 text-gray-500" />
+        <span class="font-medium text-xl">Frohnau</span>
       </div>
       
       <div class="flex items-center space-x-3">
-        <Euro class="w-5 h-5 text-gray-500" />
-        <span class="text-2xl font-bold">2,70 €</span>
+        <TrainFront class="w-6 h-6 text-gray-500" />
+        <span>12 Haltestellen</span>
+      </div>
+      
+      <div class="flex items-center space-x-3">
+        <TrainTrack class="w-6 h-6 text-gray-500" />
+        <span>16,7 km</span>
+      </div>
+      
+      <div class="flex items-center space-x-3">
+        <MapPin class="w-7 h-7 text-gray-500" />
+        <span class="font-medium text-xl">Friedrichstraße</span>
+      </div>
+      
+      <div class="flex items-center space-x-3 pt-5">
+        <Euro class="w-6 h-6 text-gray-500" />
+        <span class="text-xl font-medium">2,70 €</span>
       </div>
     </div>
   </div>
