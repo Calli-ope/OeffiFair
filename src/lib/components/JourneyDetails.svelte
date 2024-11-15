@@ -1,17 +1,12 @@
 <script>
+  import { goto } from '$app/navigation';
   import { MapPin, TrainFront, TrainTrack, Euro } from 'lucide-svelte';
-  import { fade } from 'svelte/transition';
-
-  let showEndScreen = false;
 
   function handleClick() {
-    setTimeout(() => {
-      showEndScreen = true;
-    }, 500);
+    goto('/endscreen');
   }
 </script>
 
-{#if !showEndScreen}
 <main class="flex flex-col justify-center items-center h-screen bg-neutral-200">
   <div class="space-y-16 pb-20">
     <div class="text-4xl text-neutral-700 font-semibold">
@@ -53,9 +48,3 @@
     Bis zum nächsten Ride!
   </button>
 </main>
-{:else}
-  <div class="min-h-screen bg-neutral-200 p-6 flex flex-col justify-center items-center" in:fade={{ duration: 300 }}>
-    <h1 class="text-5xl font-semibold mb-8">ÖffiFair</h1>
-    <p class="text-xl text-neutral-700">Vielen Dank für deinen Ride mit uns!</p>
-  </div>
-{/if}
