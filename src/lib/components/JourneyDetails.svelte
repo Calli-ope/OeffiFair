@@ -3,6 +3,7 @@
   import { MapPin, TrainFront, TrainTrack, Euro, Loader } from 'lucide-svelte'; // Import necessary icons
   import { fade } from 'svelte/transition';
   import { onMount } from 'svelte';
+  import BackButton from './BackButton.svelte';
 
   // State variables to control the visibility of loading icons and text for each item
   let showLocationLoading = false;
@@ -66,7 +67,10 @@
   }
 </script>
 
-<main class="flex flex-col justify-center items-center h-screen bg-neutral-200">
+<main class="relative flex flex-col justify-center items-center h-screen bg-neutral-200">
+  <!-- Back Button -->
+  <BackButton />
+
   <div class="space-y-16 pb-20">
     <!-- Greeting -->
     <div class="text-4xl text-neutral-700 font-semibold">
