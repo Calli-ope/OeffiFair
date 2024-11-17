@@ -25,6 +25,11 @@
 
 {#if !loading}
 <main class="flex flex-col justify-center items-center h-screen bg-neutral-200">
+
+  <div class="absolute top-0 w-full flex justify-center mt-24">
+    <img src="/Icon.png" alt="App Icon" class="w-36 h-36" />
+  </div>
+
   <h1 class="font-bold text-5xl text-neutral-700 mb-8">ÖffiFair</h1>
   <button on:click={handleStart} class="px-8 py-4 text-neutral-100 text-xl bg-blue-500 rounded-lg hover:bg-blue-700 transition-colors">
     Start
